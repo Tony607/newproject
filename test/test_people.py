@@ -9,4 +9,4 @@ class TestPeople(object):
         nice_name = person.get_nice_name()
         name = person.name
         assert name in nice_name
-        assert 0
+

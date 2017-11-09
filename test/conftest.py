@@ -9,7 +9,7 @@ def idfn(fixture_value):
     else:
         return None
 
-@pytest.fixture(scope="module", params=[("Ace",20, IS_YOUND), ("Bill", 55, IS_OLD)], ids=["young", "old"])
+@pytest.fixture(scope="module", params=[("Ace",20, IS_YOUND), ("Bill", 45, IS_OLD)], ids=["young", "old"])
 def person(request):
     from people import Person
     p = Person(request.param[0], request.param[1])
